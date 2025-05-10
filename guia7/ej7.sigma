@@ -1,0 +1,54 @@
+      P2←P1
+L1    IF P2 BEGINS @ GOTO L11
+      IF P2 BEGINS & GOTO L21
+      GOTO L2
+
+
+L11   IF P3 BEGINS @ GOTO L12
+      IF P3 BEGINS & GOTO L13
+      GOTO L14
+L12   P4←P4 . @
+      GOTO L14
+L13   P4←P4 . &
+      GOTO L14
+L14   P3←ϵ
+      P3 ← P3 . @
+      P2 ← ↷P2
+      GOTO L1
+
+
+L21   IF P3 BEGINS @ GOTO L22
+      IF P3 BEGINS & GOTO L23
+      GOTO L24
+L22   P4←P4 . @
+      GOTO L24
+L23   P4←P4 . &
+      GOTO L24
+L24   P3←ϵ
+      P3←P3 . &
+      P2←↷P2
+      GOTO L1
+
+
+L2    IF P3 BEGINS @ GOTO L31
+      IF P3 BEGINS & GOTO L41
+      GOTO L51
+
+L31   P1←P4
+      P1←P1 . &
+      GOTO L61
+
+L41   P1←P4
+      N1←N1 + 1
+      GOTO L1
+
+L51   P1←P1 . @
+      GOTO L61
+
+L61   IF N1≠0 GOTO L71
+      GOTO L81
+L71   N1←N1∸ 1
+      P1←P1 . @
+      GOTO L61
+
+L81   SKIP
