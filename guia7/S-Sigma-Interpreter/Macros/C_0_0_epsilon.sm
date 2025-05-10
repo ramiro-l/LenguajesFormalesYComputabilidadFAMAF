@@ -1,0 +1,7 @@
+#BEGIN MACRO
+
+#NAME: [W1←C_0_0_epsilon()]
+
+W1←ϵ
+
+#END MACRO

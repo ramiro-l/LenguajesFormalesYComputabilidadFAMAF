@@ -1,0 +1,7 @@
+#BEGIN MACRO
+
+#NAME: [V1←C_0_0_0()]
+
+V1←0
+
+#END MACRO

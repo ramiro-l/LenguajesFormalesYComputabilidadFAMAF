@@ -1,0 +1,8 @@
+#BEGIN MACRO
+
+#NAME: [V2←Suc(V1)]
+
+V2←V1
+V2←V2 + 1
+
+#END MACRO

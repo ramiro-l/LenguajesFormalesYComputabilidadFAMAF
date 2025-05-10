@@ -1,0 +1,8 @@
+#BEGIN MACRO
+
+#NAME: [W2←d_a(W1)]
+
+W2←W1
+W2←W2 . a
+
+#END MACRO
